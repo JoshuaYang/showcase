@@ -1,8 +1,11 @@
 <template lang="html">
     <div :class="['card', className]">
-        <img class="poster" :src="poster" alt="">
-        <h2 class="text">{{text}}</h2>
-        <div class="line"></div>
+        <a :href="url" target="_blank">
+            <img class="poster" :src="poster" alt="">
+            <h2 class="text">{{text}}</h2>
+            <div class="line"></div>
+        </a>
+
     </div>
 </template>
 
@@ -16,6 +19,9 @@ export default {
             type: [String],
         },
         text: {
+            type: [String],
+        },
+        url: {
             type: [String],
         },
     },
