@@ -32,7 +32,7 @@ export default {
                 aspect = this.ratio;
             }
 
-
+            // return 0;
             return `${1 / aspect * 100}%`;
         },
     },
@@ -42,6 +42,16 @@ export default {
 <style lang="scss">
 .card {
     position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    // box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
 
     .content {
         position: absolute;

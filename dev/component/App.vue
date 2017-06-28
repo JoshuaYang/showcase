@@ -2,6 +2,18 @@
     <div class="app-container">
         <card className="aaa" ratio="3:2"></card>
         <card className="bbb" ratio="0.5"></card>
+        <card className="aaa" ratio="3:2"></card>
+        <card className="bbb" ratio="0.5"></card>
+        <card className="aaa" ratio="3:2"></card>
+        <card className="bbb" ratio="0.5"></card>
+        <card className="aaa" ratio="3:2"></card>
+        <card className="bbb" ratio="0.5"></card>
+        <card className="aaa" ratio="3:2"></card>
+        <card className="bbb" ratio="0.5"></card>
+        <card className="aaa" ratio="3:2"></card>
+        <card className="bbb" ratio="0.5"></card>
+        <card className="aaa" ratio="3:2"></card>
+        <card className="bbb" ratio="0.5"></card>
         <!-- <router-view></router-view> -->
     </div>
 </template>
@@ -33,14 +45,23 @@ export default {
 }
 
 .app-container{
+    column-count: 4;
+    column-width: 25%;
+    column-gap: 10px;
+    padding: 10px;
+
+    .card {
+        margin-bottom: 10px;
+    }
+
     .aaa {
-        width: 100px;
         background-color: red;
+        width: 100%;
     }
 
     .bbb {
-        width: 200px;
         background-color: orange;
+        width: 100%;
     }
 }
 </style>
