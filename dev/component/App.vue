@@ -1,19 +1,20 @@
 <template lang="html">
     <div class="app-container">
-        <card className="aaa" ratio="3:2"></card>
-        <card className="bbb" ratio="0.5"></card>
-        <card className="aaa" ratio="3:2"></card>
-        <card className="bbb" ratio="0.5"></card>
-        <card className="aaa" ratio="3:2"></card>
-        <card className="bbb" ratio="0.5"></card>
-        <card className="aaa" ratio="3:2"></card>
-        <card className="bbb" ratio="0.5"></card>
-        <card className="aaa" ratio="3:2"></card>
-        <card className="bbb" ratio="0.5"></card>
-        <card className="aaa" ratio="3:2"></card>
-        <card className="bbb" ratio="0.5"></card>
-        <card className="aaa" ratio="3:2"></card>
-        <card className="bbb" ratio="0.5"></card>
+        <card poster="image/1.jpg" text="hello world"></card>
+        <card poster="image/2.jpg" text="hello world"></card>
+        <card poster="image/3.jpg" text="hello world"></card>
+        <card poster="image/1.jpg" text="hello world"></card>
+        <card poster="image/2.jpg" text="hello world"></card>
+        <card poster="image/3.jpg" text="hello world"></card>
+        <card poster="image/1.jpg" text="hello world"></card>
+        <card poster="image/2.jpg" text="hello world"></card>
+        <card poster="image/3.jpg" text="hello world"></card>
+        <card poster="image/1.jpg" text="hello world"></card>
+        <card poster="image/2.jpg" text="hello world"></card>
+        <card poster="image/3.jpg" text="hello world"></card>
+        <card poster="image/1.jpg" text="hello world"></card>
+        <card poster="image/2.jpg" text="hello world"></card>
+        <card poster="image/3.jpg" text="hello world"></card>
         <!-- <router-view></router-view> -->
     </div>
 </template>
@@ -32,36 +33,36 @@ export default {
 @import "../style/reset";
 @import "../style/mixin";
 
-// @include font-face("Lato-Regular");
-
 :root{
-    --color1: red;
+    --column-count: 4;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 450px) {
     :root{
-        --color1: green;
+        --column-count: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    :root{
+        --column-count: 2;
+    }
+}
+
+@media (max-width: 1024px) {
+    :root{
+        --column-count: 3;
     }
 }
 
 .app-container{
-    column-count: 4;
-    column-width: 25%;
+    column-count: var(--column-count);
     column-gap: 10px;
     padding: 10px;
 
     .card {
+        width: 100%;
         margin-bottom: 10px;
-    }
-
-    .aaa {
-        background-color: red;
-        width: 100%;
-    }
-
-    .bbb {
-        background-color: orange;
-        width: 100%;
     }
 }
 </style>
