@@ -89,6 +89,10 @@ export default {
     }
 }
 
+body {
+    background-color: #2f3238;
+}
+
 .app-container{
     column-count: var(--column-count);
     column-gap: 10px;
