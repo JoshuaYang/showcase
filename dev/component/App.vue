@@ -49,6 +49,98 @@ const config = [
         poster: 'image/UT_Xbox.jpg',
         url: 'http://project.orzy.me/UT_Xbox/',
     },
+    {
+        name: 'South_Africa_Tourism',
+        poster: 'image/UT_South_Africa_Tourism_PGX.jpg',
+        url: 'http://pgdemo2origin.undertone.com/screenshiftfp/UT_South_Africa_Tourism_PGX_1107/mobile.html',
+    },
+    {
+        name: 'holiday-gift-curator',
+        poster: 'image/R29_holiday_gift_curator.jpg',
+        url: 'http://www.clientapprove.com/preview/R29_holiday_gift_curator/',
+    },
+    {
+        name: 'Prego',
+        poster: 'image/NYT17009_Prego.jpg',
+        url: 'http://paidpost.nytimes.com/prego/could-the-most-flavorful-supermarket-tomatoes-actually-come-in-jars.html',
+    },
+    {
+        name: 'DVF',
+        poster: 'image/NYT_DVF.jpg',
+        url: 'http://demos.clientapprove.com/NYT_dvf/',
+    },
+    {
+        name: 'rev-rei',
+        poster: 'image/Attn-rev-rei.jpg',
+        url: 'http://www.clientapprove.com/preview/rev-rei-landing-page/#/',
+    },
+    {
+        name: 'Loreal_portfolio',
+        poster: 'image/Loreal_portfolio_site.jpg',
+        url: 'http://www.clientapprove.com/preview/Loreal_portfolio_site',
+        un: 'dev',
+        pw: 'F@ncyPants145!',
+    },
+    {
+        name: 'Alcoa',
+        poster: 'image/NYT_Alcoa_PP.jpg',
+        url: 'http://demos.clientapprove.com/NYT_Alcoa_PP/',
+    },
+    {
+        name: 'coned',
+        poster: 'image/NYT_coned.jpg',
+        url: 'http://demos.clientapprove.com/NYT_coned/',
+    },
+    {
+        name: 'paper-scissors-art',
+        poster: 'image/NYT-paper-scissors-art.jpg',
+        url: 'https://paidpost.nytimes.com/hennessy-paradis-imperial/the-sense-of-precision-series/paper-scissors-art.html',
+    },
+    {
+        name: 'Activia',
+        poster: 'image/NYT_Activia.jpg',
+        url: 'http://adv.preview.nytimes.com/m/activia/doing-a-gut-check-scaffolding-next/',
+    },
+    {
+        name: 'mexico-tourism',
+        poster: 'image/NYT-mexico-tourism.jpg',
+        url: 'http://adv.preview.nytimes.com/m/mexico-tourism/my-journey-to-mexico/',
+    },
+    {
+        name: 'Adobe',
+        poster: 'image/NYT-Adobe.jpg',
+        url: 'https://paidpost.nytimes.com/adobe/carrying-the-digital-torch.html',
+    },
+    {
+        name: 'Tylenol',
+        poster: 'image/NYT1614_Tylenol_Paidpost.jpg',
+        url: 'http://paidpost.nytimes.com/tylenol/what-moves-me.html',
+    },
+    {
+        name: 'bee-2-b',
+        poster: 'image/NYT1616_IBMWeather_PaidPost.jpg',
+        url: 'http://paidpost.nytimes.com/ibm/bee-2-b.html',
+    },
+    {
+        name: 'ChevronEfficiencyIDV',
+        poster: 'image/NYT1618_ChevronEfficiencyIDV_PaidPost.jpg',
+        url: 'http://paidpost.nytimes.com/chevron/how-the-us-has-cut-pollution-while-growing-the-economy.html',
+    },
+    {
+        name: 'ChevronMobileMoments',
+        poster: 'image/NYT1617_ChevronMobileMoments_PaidPost.jpg',
+        url: 'http://paidpost.nytimes.com/chevron/what-do-you-really-know-about-natural-gas.html',
+    },
+    {
+        name: 'PfizerPrevnar',
+        poster: 'image/NYT1624_PfizerPrevnar_PaidPost.jpg',
+        url: 'http://paidpost.nytimes.com/pfizer/for-the-active-and-over-50.html',
+    },
+    // {
+    //     name: '',
+    //     poster: '',
+    //     url: '',
+    // },
 ];
 
 export default {
