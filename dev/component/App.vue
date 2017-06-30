@@ -11,6 +11,8 @@
 </template>
 
 <script>
+import _ from 'lodash';
+
 import Card from './Card.vue';
 
 const config = [
@@ -146,7 +148,7 @@ const config = [
 export default {
     data() {
         return {
-            config,
+            config: _.shuffle(config),
         };
     },
     components: {
