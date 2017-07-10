@@ -38,12 +38,12 @@ const config = [
         url: 'http://project.orzy.me/UT_Reebok_SSFP/',
     },
     {
-        name: 'Reebok_zquick',
+        name: 'Reebok_Zquick',
         poster: 'image/UT_Reebok_zquick_SS.jpg',
         url: 'http://project.orzy.me/UT_Reebok_zquick_SS/',
     },
     {
-        name: 'Shell_pennzoil',
+        name: 'Shell_Pennzoil',
         poster: 'image/UT_Shell_pennzoil_SS.jpg',
         url: 'http://project.orzy.me/UT_Shell_pennzoil_SS/',
     },
@@ -63,7 +63,7 @@ const config = [
         url: 'http://pgdemo2origin.undertone.com/screenshiftfp/UT_South_Africa_Tourism_PGX_1107/mobile.html',
     },
     {
-        name: 'holiday-gift-curator',
+        name: 'Holiday_Gift_Curator',
         poster: 'image/R29_holiday_gift_curator.jpg',
         url: 'http://www.clientapprove.com/preview/R29_holiday_gift_curator/',
     },
@@ -78,12 +78,12 @@ const config = [
         url: 'http://demos.clientapprove.com/NYT_dvf/',
     },
     {
-        name: 'rev-rei',
+        name: 'Rev_Rei',
         poster: 'image/Attn-rev-rei.jpg',
         url: 'http://www.clientapprove.com/preview/rev-rei-landing-page/#/',
     },
     {
-        name: 'Loreal_portfolio',
+        name: 'Loreal_Portfolio',
         poster: 'image/Loreal_portfolio_site.jpg',
         url: 'http://www.clientapprove.com/preview/Loreal_portfolio_site',
         un: 'dev',
@@ -95,12 +95,12 @@ const config = [
         url: 'http://demos.clientapprove.com/NYT_Alcoa_PP/',
     },
     {
-        name: 'coned',
+        name: 'Coned',
         poster: 'image/NYT_coned.jpg',
         url: 'http://demos.clientapprove.com/NYT_coned/',
     },
     {
-        name: 'paper-scissors-art',
+        name: 'Paper_Scissors_Art',
         poster: 'image/NYT-paper-scissors-art.jpg',
         url: 'https://paidpost.nytimes.com/hennessy-paradis-imperial/the-sense-of-precision-series/paper-scissors-art.html',
     },
@@ -110,7 +110,7 @@ const config = [
         url: 'http://adv.preview.nytimes.com/m/activia/doing-a-gut-check-scaffolding-next/',
     },
     {
-        name: 'mexico-tourism',
+        name: 'Mexico_Tourism',
         poster: 'image/NYT-mexico-tourism.jpg',
         url: 'http://adv.preview.nytimes.com/m/mexico-tourism/my-journey-to-mexico/',
     },
@@ -125,22 +125,22 @@ const config = [
         url: 'http://paidpost.nytimes.com/tylenol/what-moves-me.html',
     },
     {
-        name: 'bee-2-b',
+        name: 'Bee_2_B',
         poster: 'image/NYT1616_IBMWeather_PaidPost.jpg',
         url: 'http://paidpost.nytimes.com/ibm/bee-2-b.html',
     },
     {
-        name: 'ChevronEfficiencyIDV',
+        name: 'Chevron_Efficiency',
         poster: 'image/NYT1618_ChevronEfficiencyIDV_PaidPost.jpg',
         url: 'http://paidpost.nytimes.com/chevron/how-the-us-has-cut-pollution-while-growing-the-economy.html',
     },
     {
-        name: 'ChevronMobileMoments',
+        name: 'Chevron_Mobile',
         poster: 'image/NYT1617_ChevronMobileMoments_PaidPost.jpg',
         url: 'http://paidpost.nytimes.com/chevron/what-do-you-really-know-about-natural-gas.html',
     },
     {
-        name: 'PfizerPrevnar',
+        name: 'Pfizer_Prevnar',
         poster: 'image/NYT1624_PfizerPrevnar_PaidPost.jpg',
         url: 'http://paidpost.nytimes.com/pfizer/for-the-active-and-over-50.html',
     },
@@ -161,8 +161,9 @@ export default {
     mounted() {
         new PictureLoader({
             loadAll: () => {
-                console.log('234234', this);
-                this.loaded = true;
+                setTimeout(() => {
+                    this.loaded = true;
+                }, 1000);
             },
         }).load();
     },
