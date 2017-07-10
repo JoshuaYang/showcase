@@ -5,7 +5,6 @@
             <h2 class="text">{{text}}</h2>
             <div class="line"></div>
         </a>
-
     </div>
 </template>
 
