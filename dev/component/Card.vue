@@ -31,6 +31,28 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400");
 
+:root{
+    --font-size: 1.6vw;
+}
+
+@media (max-width: 450px) {
+    :root{
+        --font-size: 6.6vw;
+    }
+}
+
+@media (max-width: 768px) {
+    :root{
+        --font-size: 3.6vw;
+    }
+}
+
+@media (max-width: 1024px) {
+    :root{
+        --font-size: 2.6vw;
+    }
+}
+
 .card {
     position: relative;
     display: inline-block;
@@ -62,7 +84,6 @@ export default {
     .poster {
         width: 100%;
         display: block;
-        // border-radius: 5px;
         transition: opacity 0.35s;
         transform: translate3d(0,0,0);
     }
@@ -76,7 +97,7 @@ export default {
         opacity: 0;
         transform: translateY(-30px);
         transition: opacity 0.35s, transform 0.35s;
-        font-size: 30px;
+        font-size: var(--font-size);
         color: white;
         font-family: "Raleway";
         font-weight: 300;
