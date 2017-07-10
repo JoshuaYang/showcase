@@ -2,7 +2,6 @@
     <div :class="['card', className]">
         <a :href="url" target="_blank">
             <div class="poster preload" :data-source="poster"></div>
-            <!-- <img class="poster" :src="poster" alt=""> -->
             <h2 class="text">{{text}}</h2>
             <div class="line"></div>
         </a>
@@ -10,8 +9,6 @@
 </template>
 
 <script>
-import PictureLoader from 'joshua-picture-loader';
-
 export default {
     props: {
         className: {
@@ -26,9 +23,6 @@ export default {
         url: {
             type: [String],
         },
-    },
-    mounted() {
-        new PictureLoader().load();
     },
 };
 </script>

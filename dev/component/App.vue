@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="app-container">
-        <loading></loading>
+        <loading v-show="!this.loaded"></loading>
 
         <card v-for="(item, i) in config" :key="i"
             :poster="item.poster"
@@ -14,6 +14,7 @@
 
 <script>
 import _ from 'lodash';
+import PictureLoader from 'joshua-picture-loader';
 
 import Loading from './Loading.vue';
 import Card from './Card.vue';
@@ -152,7 +153,11 @@ export default {
     data() {
         return {
             config: _.shuffle(config),
+            loaded: true,
         };
+    },
+    mounted() {
+        new PictureLoader().load();
     },
     components: {
         Loading,

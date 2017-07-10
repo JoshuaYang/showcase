@@ -1,6 +1,6 @@
 <template lang="html">
     <div class="loading">
-        <div class="loader"></div>
+        <img class="loader" src="../image/loading.svg" alt="">
     </div>
 </template>
 
@@ -16,11 +16,14 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #202c2f;
     z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     .loader {
-
+        width: 256px;
     }
 }
 </style>
