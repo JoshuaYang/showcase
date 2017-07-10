@@ -1,7 +1,8 @@
 <template lang="html">
     <div :class="['card', className]">
         <a :href="url" target="_blank">
-            <img class="poster" :src="poster" alt="">
+            <div class="poster preload" :data-source="poster"></div>
+            <!-- <img class="poster" :src="poster" alt=""> -->
             <h2 class="text">{{text}}</h2>
             <div class="line"></div>
         </a>
@@ -9,6 +10,8 @@
 </template>
 
 <script>
+import PictureLoader from 'joshua-picture-loader';
+
 export default {
     props: {
         className: {
@@ -23,6 +26,9 @@ export default {
         url: {
             type: [String],
         },
+    },
+    mounted() {
+        new PictureLoader().load();
     },
 };
 </script>
@@ -48,7 +54,7 @@ export default {
 
 @media (max-width: 1024px) {
     :root{
-        --font-size: 2.6vw;
+        --font-size: 2.5vw;
     }
 }
 
@@ -92,7 +98,7 @@ export default {
         bottom: 30px;
         left: 0;
         width: 100%;
-        padding: 0 20px;
+        padding: 0 4%;
         opacity: 0;
         transform: translateY(-30px);
         transition: opacity 0.35s, transform 0.35s;
