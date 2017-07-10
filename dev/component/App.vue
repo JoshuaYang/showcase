@@ -1,5 +1,7 @@
 <template lang="html">
     <div class="app-container">
+        <loading></loading>
+
         <card v-for="(item, i) in config" :key="i"
             :poster="item.poster"
             :text="item.name"
@@ -13,6 +15,7 @@
 <script>
 import _ from 'lodash';
 
+import Loading from './Loading.vue';
 import Card from './Card.vue';
 
 const config = [
@@ -152,6 +155,7 @@ export default {
         };
     },
     components: {
+        Loading,
         Card,
     },
 };
