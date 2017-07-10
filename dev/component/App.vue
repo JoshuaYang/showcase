@@ -1,6 +1,8 @@
 <template lang="html">
     <div class="app-container">
-        <loading v-show="!this.loaded"></loading>
+        <transition name="loading-transition">
+            <loading v-if="!this.loaded"></loading>
+        </transition>
 
         <card v-for="(item, i) in config" :key="i"
             :poster="item.poster"
@@ -153,11 +155,16 @@ export default {
     data() {
         return {
             config: _.shuffle(config),
-            loaded: true,
+            loaded: false,
         };
     },
     mounted() {
-        new PictureLoader().load();
+        new PictureLoader({
+            loadAll: () => {
+                console.log('234234', this);
+                this.loaded = true;
+            },
+        }).load();
     },
     components: {
         Loading,
@@ -205,5 +212,13 @@ body {
         width: 100%;
         margin-bottom: 10px;
     }
+}
+
+.loading-transition-enter-active, .loading-transition-leave-active {
+    transition: opacity 1s;
+}
+
+.loading-transition-enter, .loading-transition-leave-to {
+    opacity: 0;
 }
 </style>
