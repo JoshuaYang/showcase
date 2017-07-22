@@ -208,6 +208,7 @@ body {
     column-count: var(--column-count);
     column-gap: 10px;
     padding: 10px;
+    padding-bottom: 0;
 
     .card {
         width: 100%;
