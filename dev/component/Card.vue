@@ -61,7 +61,7 @@ export default {
     cursor: pointer;
     background-color: #4a3753;
     overflow: hidden;
-    transform: translate3d(0,0,0);
+    // transform: translate3d(0,0,0);
 
     &:hover {
         // box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
