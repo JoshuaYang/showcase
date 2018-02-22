@@ -6,12 +6,12 @@ module.exports = {
     '@assets/scss/reset.scss',
   ],
   head: {
-    title: 'ssr-template',
+    title: 'showcase',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: 'format-detection', content: 'telephone=no' },
-      { hid: 'description', name: 'description', content: 'SSR template' },
+      { hid: 'description', name: 'description', content: 'showcase' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
