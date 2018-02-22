@@ -1,0 +1,48 @@
+const path = require('path');
+
+module.exports = {
+  srcDir: 'client/',
+  css: [
+    '@assets/scss/reset.scss',
+  ],
+  head: {
+    title: 'ssr-template',
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'description', name: 'description', content: 'SSR template' },
+    ],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+    ],
+  },
+  loading: {
+    color: '#3B8070',
+  },
+  build: {
+    vendor: [
+      'axios',
+    ],
+
+    /*
+    ** Run ESLint on save
+    */
+    extend (config, { isDev, isClient }) {
+      if (isDev && isClient) {
+        config.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/,
+        });
+      }
+    },
+  },
+  modules: [
+    ['nuxt-sass-resources-loader', [
+      path.resolve(__dirname, 'client/assets/scss/variable.scss'),
+      path.resolve(__dirname, 'client/assets/scss/mixin.scss'),
+    ]],
+  ],
+};
